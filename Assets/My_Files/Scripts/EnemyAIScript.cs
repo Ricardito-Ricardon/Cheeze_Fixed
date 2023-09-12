@@ -86,7 +86,7 @@ public class EnemyAIScript : MonoBehaviour
         Collider[] hitTargets = Physics.OverlapSphere(attackPoint_Transform.position, attackPoint_Range);
         foreach (var target in hitTargets)
         {
-            if(target.CompareTag("Player"))
+            if(target.gameObject == GameState.Get().GetPlayer())
             {
                 //Add Damage
                 Debug.Log("Attack Hit");

@@ -22,14 +22,14 @@ public class ScoreKeeper : MonoBehaviour
 
     private void Update()
     {
-        scoreText.text = "Stars: " + currentScore;
+        scoreText.text = "Mice Destroyed: " + currentScore;
 
-        if (currentScore == 50)
+        if (currentScore == 8)
         {
-            Time.timeScale = 0f;
-            Winner.text = "You have collected all the stars! Press ESC and click 'Menu' to try again.";
-            track.Pause();
-            dialogue.Pause();
+            //Time.timeScale = 0f;
+            Winner.text = "You have destroyed all the mice!";
+            //track.Pause();
+            //dialogue.Pause();
         }
     }
 

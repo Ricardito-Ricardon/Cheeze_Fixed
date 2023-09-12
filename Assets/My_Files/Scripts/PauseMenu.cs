@@ -59,4 +59,17 @@ public class PauseMenu : MonoBehaviour
         Application.Quit();
     }
 
+    public void PlayGame()
+    {
+        SceneManager.LoadScene("Cheeze");
+        Cursor.visible = false;
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = false;
+        Soundtrack.UnPause();
+        Dialogue.UnPause();
+    }
+
 }

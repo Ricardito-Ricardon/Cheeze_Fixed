@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/My_Files/Scenes/Menu_Scene.unity
     guid: 9418e5b7d42dda849a38d893c3d5d538
   - enabled: 1
-    path: Assets/My_Files/Scenes/Level_1.unity
-    guid: 1fdf2b9e00e3f1b43bfd03dba42186e2
+    path: Assets/My_Files/Scenes/Cheeze.unity
+    guid: 06288bee73964124a9f429bec830aa69
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}

@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public Animator animator;
     public AudioSource deathsound;
-    public AudioSource hurtsound;
+    [SerializeField] AudioSource hurtsound;
 
     public int maxHealth = 100;
     int currentHealth;
@@ -40,6 +40,7 @@ public class Enemy : MonoBehaviour
         GetComponent<Collider>().enabled = false;
         this.enabled = false;
         deathsound.Play();
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<ScoreKeeper>().AddScore(1);
     }
 
     void obliterate()
