@@ -11,5 +11,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/My_Files/Scenes/Cheeze.unity
     guid: 06288bee73964124a9f429bec830aa69
+  - enabled: 1
+    path: Assets/My_Files/Scenes/Cheeze_lvl2.unity
+    guid: 9d340732dd03b914ea8872904739e2d6
+  - enabled: 1
+    path: Assets/My_Files/Scenes/Cheeze_lvl3.unity
+    guid: d375b9527a0ad5347a95b732b04ade7e
+  - enabled: 1
+    path: Assets/My_Files/Scenes/Win_Screen.unity
+    guid: 1c85ddf52c2d6244887c8802df5af6ba
+  - enabled: 1
+    path: Assets/My_Files/Scenes/Lose_Screen.unity
+    guid: 6ac4a5b79fb16f54289fa345fa486292
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}

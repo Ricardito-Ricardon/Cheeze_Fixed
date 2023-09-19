@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -52,8 +53,9 @@ public class PlayerScript : MonoBehaviour
 
     public void YouLose()
     {
-        loseText.text = "You're dead! Press ESC and click 'Menu' to try again.";
-        Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        SceneManager.LoadScene("Lose_Screen");
     }
 
 }

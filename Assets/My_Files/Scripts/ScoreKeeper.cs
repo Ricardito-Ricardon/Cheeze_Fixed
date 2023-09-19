@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ScoreKeeper : MonoBehaviour
 {
@@ -27,10 +28,11 @@ public class ScoreKeeper : MonoBehaviour
         if (currentScore == 8)
         {
             //Time.timeScale = 0f;
-            Winner.text = "You have destroyed all the mice!";
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             //track.Pause();
             //dialogue.Pause();
         }
+
     }
 
     public void AddScore(int points)
